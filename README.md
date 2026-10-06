@@ -6,6 +6,42 @@
   참고 코드잇 [AI] 스프린트 미션 7 https://www.codeit.kr/topics/sprint-ai-mission-7/lessons/11967
 ## 데이터정보 및 환경설정
 ### 데이터셋 소개 (The Oxford-IIIT Pet Dataset)
+**출처: 캐글 - 옥스포드-IIIT 반려동물 데이터셋, https://www.kaggle.com/datasets/devdgohil/the-oxfordiiit-pet-dataset**
+
+**Context**
+
+<br>Oxford-IIIT Pet Dataset은 옥스퍼드 대학교 시각 기하학 그룹에서 제작한 37개 카테고리의 반려동물 데이터셋으로, 각 카테고리별로 약 100장의 이미지가 포함되어 있습니다. 이미지들은 크기, 자세, 조명 등에서 큰 변화를 보입니다. 모든 이미지에는 품종, 머리 영역(ROI), 픽셀 단위의 트라이맵 분할에 대한 정답 주석이 함께 제공됩니다.
+
+**README**
+
+<br>Omkar M Parkhi, Andrea Vedaldi, Andrew Zisserman, CV Jawahar 저희는 각 클래스당 약 200장의 이미지로 구성된 37개 카테고리의 반려동물 데이터셋을 제작했습니다. 이미지들은 크기, 자세, 조명 면에서 큰 변화를 보입니다. 모든 이미지에는 품종, 머리 ROI, 픽셀 수준의 트라이맵 분할에 대한 정답 주석이 함께 제공됩니다. 
+구성: 
+
+-------- 
+
+trimaps/ 데이터셋의 모든 이미지에 대한 트리맵 주석 
+				<br>픽셀 주석: 1: 전경 2: 배경 3: 분류되지 않음 
+<br>xmls/ PASCAL VOC 형식의 머리 경계 상자 주석 list.txt 데이터셋의 모든 이미지 목록 파일의 각 항목은 다음과 같은 형식을 갖습니다. 
+<br>이미지 CLASS-ID SPECIES BREED ID 
+<br>ID: 1~37 클래스 ID 
+<br>SPECIES: 1 == 고양이, 2 == 개 
+<br>BREED ID: 1~25 == 고양이, 1~12 == 개 
+<br>첫 글자가 대문자인 이미지는 고양이 이미지이고, 첫 글자가 소문자인 이미지는 개 이미지입니다. trainval.txt 논문에서 사용된 분할 방식을 설명하는 파일입니다. test.txt 임의의 분할 방식을 시도해 보는 것을 권장합니다. 
+<br>지원: 
+
+------- 
+
+문의 사항은 Omkar Parkhi(omkar@robots.ox.ac.uk)에게 연락하십시오. 
+<br>참고 문헌: 
+
+---------- 
+
+[1] OM Parkhi, A. Vedaldi, A. Zisserman, CV Jawahar Cats and Dogs IEEE Conference on Computer Vision and Pattern Recognition, 2012 
+참고: 
+
+---- 
+
+데이터 세트는 연구 목적으로만 제공됩니다. 이 이미지를 사용할 때는 원본 웹사이트의 이용 약관을 준수해야 합니다. 웹사이트 목록은 [1]을 참조하십시오.
   - 데이터 불러오기
   <br>- 환경 설정
   <br>- 
